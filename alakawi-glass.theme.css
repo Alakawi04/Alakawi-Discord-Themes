@@ -1,94 +1,59 @@
+/**
+ * @name Alakawi Minimal Glass
+ * @author Alakawi
+ * @version 1.0
+ * @description Clean Glass Theme
+ */
 
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
-:root {
-  --alakawi-main: #8b5cf6;
-  --alakawi-blue: #38bdf8;
-  --alakawi-bg: rgba(8, 10, 20, 0.72);
-  --alakawi-card: rgba(255, 255, 255, 0.075);
-  --alakawi-border: rgba(139, 92, 246, 0.35);
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
 * {
-  font-family: "Poppins", sans-serif !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+:root {
+    --main-bg: rgba(20, 20, 20, 0.45);
+    --card-bg: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
 }
 
 body {
-  background: radial-gradient(circle at top left, #1e1b4b, transparent 35%),
-              radial-gradient(circle at bottom right, #0ea5e9, transparent 30%),
-              #030712 !important;
+    background: #0f1115 !important;
 }
 
 body::before {
-  content: "ALAKAWI";
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 11vw;
-  font-weight: 900;
-  letter-spacing: 22px;
-  color: white;
-  opacity: 0.035;
-  pointer-events: none;
-  z-index: 999;
-}
-
-.appMount__51fd7,
-.bg__960e4 {
-  background: transparent !important;
+    content: "ALAKAWI";
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: rgba(255,255,255,0.12);
+    pointer-events: none;
 }
 
 [class*="sidebar_"],
 [class*="chat_"],
-[class*="container_"],
 [class*="members_"],
+[class*="container_"],
 [class*="panels_"] {
-  background: var(--alakawi-bg) !important;
-  backdrop-filter: blur(22px) saturate(160%) !important;
-  border-color: var(--alakawi-border) !important;
+    background: var(--main-bg) !important;
+    backdrop-filter: blur(14px);
 }
 
 [class*="message_"]:hover {
-  background: var(--alakawi-card) !important;
-  border-radius: 16px !important;
-  box-shadow: 0 0 25px rgba(139, 92, 246, 0.16);
-}
-
-[class*="avatar_"] {
-  border-radius: 50% !important;
-  box-shadow: 0 0 15px rgba(139, 92, 246, 0.45);
-}
-
-[class*="name_"],
-[class*="username_"],
-[class*="title_"] {
-  color: #e9d5ff !important;
-}
-
-[class*="button_"],
-[class*="lookFilled_"] {
-  background: linear-gradient(135deg, var(--alakawi-main), var(--alakawi-blue)) !important;
-  border-radius: 14px !important;
-  box-shadow: 0 0 18px rgba(139, 92, 246, 0.35);
-}
-
-[class*="channel_"]:hover,
-[class*="interactive_"]:hover {
-  background: rgba(139, 92, 246, 0.18) !important;
-  border-radius: 14px !important;
+    background: var(--card-bg) !important;
+    border-radius: 10px;
 }
 
 [class*="scrollableContainer_"],
-[class*="input_"],
-textarea {
-  background: rgba(255, 255, 255, 0.07) !important;
-  border: 1px solid rgba(139, 92, 246, 0.28) !important;
-  border-radius: 18px !important;
+[class*="input_"] {
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid var(--border);
+    border-radius: 12px;
 }
 
-[class*="guilds_"] {
-  background: rgba(0, 0, 0, 0.35) !important;
-  backdrop-filter: blur(18px) !important;
+[class*="channel_"]:hover {
+    background: rgba(255,255,255,0.05) !important;
+    border-radius: 8px;
 }
