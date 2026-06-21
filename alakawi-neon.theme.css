@@ -1,15 +1,23 @@
-/**
- * @name Alakawi Neon
- * @author Alakawi
- * @version 1.0.0
- * @description Neon Theme by Alakawi
- */
+:root{
+  --main-color:#8b5cf6;
+  --second-color:#3b82f6;
+}
 
-@import url("https://raw.githubusercontent.com/refact0r/midnight-discord/master/themes/midnight.theme.css");
+body::before{
+  content:"ALAKAWI";
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:180px;
+  font-weight:900;
+  opacity:.03;
+  color:white;
+  pointer-events:none;
+  letter-spacing:20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
-:root {
-    --accent: rgb(168, 85, 247);
-    --background-primary: #080810;
-    --background-secondary: #101018;
-    --background-tertiary: #050509;
+*{
+ font-family:'Poppins',sans-serif;
 }
