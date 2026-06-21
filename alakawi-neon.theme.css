@@ -1,92 +1,40 @@
 /**
- * @name Alakawi Neon
+ * @name Alakawi Dark
  * @author Alakawi
- * @version 1.0.0
- * @description Cyber neon Discord theme by Alakawi
+ * @version 2.0
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
-:root {
-  --neon-pink: #ff2bd6;
-  --neon-blue: #00d9ff;
-  --neon-purple: #8b5cf6;
+*{
+    font-family: Inter,sans-serif !important;
 }
 
-* {
-  font-family: "Orbitron", sans-serif !important;
+body{
+    background:#0b0c0e !important;
 }
 
-body {
-  background: linear-gradient(135deg, #030014, #08001f, #020617) !important;
+body::after{
+    content:"ALAKAWI";
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    color:rgba(255,255,255,.08);
+    letter-spacing:6px;
+    font-size:13px;
 }
 
-body::after {
-  content: "Alakawi";
-  position: fixed;
-  right: 7%;
-  bottom: 12%;
-  font-size: 7vw;
-  font-weight: 900;
-  font-style: italic;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--neon-pink);
-  text-shadow: 0 0 25px var(--neon-pink), 0 0 50px var(--neon-blue);
-  opacity: 0.22;
-  pointer-events: none;
-  z-index: 999;
-}
-
-.appMount__51fd7,
-.bg__960e4 {
-  background: transparent !important;
-}
-
-[class*="container_"],
 [class*="sidebar_"],
 [class*="chat_"],
-[class*="members_"],
-[class*="panels_"] {
-  background: rgba(3, 7, 18, 0.82) !important;
-  border: 1px solid rgba(255, 43, 214, 0.25) !important;
-  box-shadow: inset 0 0 20px rgba(139, 92, 246, 0.08);
+[class*="container_"]{
+    background:#111317 !important;
 }
 
-[class*="message_"]:hover {
-  background: rgba(255, 43, 214, 0.08) !important;
-  box-shadow: 0 0 22px rgba(255, 43, 214, 0.22);
-  border-radius: 14px !important;
+[class*="message_"]:hover{
+    background:#181b20 !important;
 }
 
-[class*="avatar_"] {
-  box-shadow: 0 0 18px var(--neon-blue), 0 0 28px rgba(255, 43, 214, 0.35);
-}
-
-[class*="name_"],
-[class*="username_"],
-[class*="title_"] {
-  color: #f0abfc !important;
-  text-shadow: 0 0 8px rgba(255, 43, 214, 0.45);
-}
-
-[class*="button_"],
-[class*="lookFilled_"] {
-  background: linear-gradient(90deg, var(--neon-pink), var(--neon-purple), var(--neon-blue)) !important;
-  border-radius: 12px !important;
-  box-shadow: 0 0 20px rgba(255, 43, 214, 0.5);
-}
-
-[class*="channel_"]:hover,
-[class*="interactive_"]:hover {
-  background: rgba(0, 217, 255, 0.12) !important;
-  border-left: 3px solid var(--neon-pink);
-}
-
-[class*="scrollableContainer_"],
-[class*="input_"],
-textarea {
-  background: rgba(0, 0, 0, 0.45) !important;
-  border: 1px solid rgba(0, 217, 255, 0.35) !important;
-  border-radius: 16px !important;
-  box-shadow: 0 0 18px rgba(0, 217, 255, 0.12);
+[class*="channel_"]:hover{
+    background:#1c2025 !important;
+    border-radius:8px;
 }
