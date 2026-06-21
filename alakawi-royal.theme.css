@@ -1,0 +1,98 @@
+/**
+ * @name Alakawi Royal
+ * @author Alakawi
+ * @version 1.0.0
+ * @description Luxury black and gold Discord theme by Alakawi
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --gold: #facc15;
+  --dark: #050505;
+  --card: rgba(255, 255, 255, 0.055);
+}
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+[class*="title_"],
+[class*="name_"],
+[class*="username_"] {
+  font-family: "Playfair Display", serif !important;
+}
+
+body {
+  background: radial-gradient(circle at top, #3f2f00, transparent 32%),
+              linear-gradient(145deg, #020202, #090909, #111827) !important;
+}
+
+body::before {
+  content: "ALAKAWI";
+  position: fixed;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display", serif;
+  font-size: 10vw;
+  font-weight: 800;
+  color: rgba(250, 204, 21, 0.05);
+  letter-spacing: 18px;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.appMount__51fd7,
+.bg__960e4 {
+  background: transparent !important;
+}
+
+[class*="container_"],
+[class*="sidebar_"],
+[class*="chat_"],
+[class*="members_"],
+[class*="panels_"] {
+  background: rgba(5, 5, 5, 0.82) !important;
+  backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(250, 204, 21, 0.18) !important;
+}
+
+[class*="message_"]:hover {
+  background: var(--card) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 0 24px rgba(250, 204, 21, 0.12);
+}
+
+[class*="avatar_"] {
+  border: 1px solid rgba(250, 204, 21, 0.65);
+  box-shadow: 0 0 16px rgba(250, 204, 21, 0.28);
+}
+
+[class*="name_"],
+[class*="username_"],
+[class*="title_"] {
+  color: #fde68a !important;
+}
+
+[class*="button_"],
+[class*="lookFilled_"] {
+  background: linear-gradient(135deg, #854d0e, #facc15) !important;
+  color: #090909 !important;
+  border-radius: 14px !important;
+  font-weight: 800 !important;
+}
+
+[class*="channel_"]:hover,
+[class*="interactive_"]:hover {
+  background: rgba(250, 204, 21, 0.11) !important;
+  border-radius: 14px !important;
+}
+
+[class*="scrollableContainer_"],
+[class*="input_"],
+textarea {
+  background: rgba(255, 255, 255, 0.055) !important;
+  border: 1px solid rgba(250, 204, 21, 0.22) !important;
+  border-radius: 18px !important;
+}
