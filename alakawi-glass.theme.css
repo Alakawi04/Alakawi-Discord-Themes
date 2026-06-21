@@ -1,34 +1,37 @@
 /**
- * @name Alakawi Minimal Glass
+ * @name Alakawi Glass
  * @author Alakawi
- * @version 1.0
+ * @version 2.0
  * @description Clean Glass Theme
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 * {
     font-family: "Inter", sans-serif !important;
 }
 
 :root {
-    --main-bg: rgba(20, 20, 20, 0.45);
-    --card-bg: rgba(255,255,255,0.04);
+    --bg-main: rgba(20,20,20,0.55);
+    --bg-card: rgba(255,255,255,0.04);
     --border: rgba(255,255,255,0.08);
 }
 
 body {
-    background: #0f1115 !important;
+    background: #0d0f12 !important;
 }
 
 body::before {
     content: "ALAKAWI";
     position: fixed;
-    bottom: 30px;
-    right: 40px;
-    font-size: 14px;
-    letter-spacing: 6px;
-    color: rgba(255,255,255,0.12);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9vw;
+    font-weight: 900;
+    letter-spacing: 20px;
+    color: white;
+    opacity: .015;
     pointer-events: none;
 }
 
@@ -36,24 +39,24 @@ body::before {
 [class*="chat_"],
 [class*="members_"],
 [class*="container_"],
-[class*="panels_"] {
-    background: var(--main-bg) !important;
-    backdrop-filter: blur(14px);
+[class*="panels_"]{
+    background: var(--bg-main) !important;
+    backdrop-filter: blur(12px);
 }
 
-[class*="message_"]:hover {
-    background: var(--card-bg) !important;
+[class*="message_"]:hover{
+    background: var(--bg-card) !important;
+    border-radius: 12px;
+}
+
+[class*="channel_"]:hover{
+    background: rgba(255,255,255,.05) !important;
     border-radius: 10px;
 }
 
 [class*="scrollableContainer_"],
-[class*="input_"] {
-    background: rgba(255,255,255,0.03) !important;
+[class*="input_"]{
+    background: rgba(255,255,255,.03) !important;
     border: 1px solid var(--border);
     border-radius: 12px;
-}
-
-[class*="channel_"]:hover {
-    background: rgba(255,255,255,0.05) !important;
-    border-radius: 8px;
 }
