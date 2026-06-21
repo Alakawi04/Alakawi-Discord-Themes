@@ -1,0 +1,15 @@
+/**
+ * @name Alakawi Neon
+ * @author Alakawi
+ * @version 1.0.0
+ * @description Neon Theme by Alakawi
+ */
+
+@import url("https://raw.githubusercontent.com/refact0r/midnight-discord/master/themes/midnight.theme.css");
+
+:root {
+    --accent: rgb(168, 85, 247);
+    --background-primary: #080810;
+    --background-secondary: #101018;
+    --background-tertiary: #050509;
+}
